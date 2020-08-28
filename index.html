@@ -1,36 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Article preview component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+  <main>
+    <section class="container">
+      <article>
+        <div class="article-image">
+          <!-- <img src="images/drawers.jpg" alt=""> -->
+        </div>
+        <div class="article-details">
+          <p class="article-details__title">
+            Shift the overall look and feel by adding these wonderful
+            touches to furniture in your home
+          </p>
+          <p class="article-details__content">
+            Ever been in a room and felt like something was missing? Perhaps
+            it felt slightly bare and uninviting. I’ve got some simple tips
+            to help you make any room feel complete.
+          </p>
+          <div class="article-footer" id="article-footer">
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+            <div class="modal-share__pin" id="modal_pin"></div>
+            <div class="article-footer__autor">
+              <img src="images/avatar-michelle.jpg" class="article-footer__autor--avatar" alt="">
+              <div class="article-footer__autor--name">
+                <p class="name">Michelle Appleton</p>
+                <p class="date">28 Jun 2020</p>
+              </div>
+            </div>
+            
+            <div class="article-footer__share" id="btn_share">
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
+            </div>
+          </div>
 
-  Michelle Appleton
-  28 Jun 2020
+        </div>
+        <div class="modal-share" id="modal">
+          <p>SHARE</p>
+          <img src="images/icon-facebook.svg" alt="">
+          <img src="images/icon-twitter.svg" alt="">
+          <img src="images/icon-pinterest.svg" alt="">
+          <div class="article-footer__share" id="btn_share_modal"></div>
+        </div>
+      </article>
+    </section>
 
-  Share
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </main>
 </body>
+<footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/faustogomezp" target="_blank">Fausto Gómez</a>.
+  </div>
+</footer>
+<script src="assets/main.js"></script>
 </html>
